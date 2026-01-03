@@ -83,6 +83,15 @@ The point $x(p)$ is defined by the extremal condition $\partial F / \partial x=0
 \subsubsection{Equivalence of Lagrange's and Hamilton's equations}
 Assuming Lagrangian $L$ is convex with respect to $\dot{q}$, and the system of Lagrange's equation $\dot{p}=\partial L / \partial q$. 
 
+\textbf{Theorem}: The system of Lagrange's equations is equivalent to the system of $2n$ first-order equations (Hamilton's equations)
+\begin{align}
+    & \dot{\mathrm{p}} = -\frac{\partial H}{\partial \mathrm{q}} \\
+    & \dot{\mathrm{q}} = \frac{\partial H}{\partial \mathrm{p}}, 
+\end{align}
+where $H(\mathrm{p}, \mathrm{q}, t) = \mathrm{p}\dot{\mathrm{q} - L (\mathrm{q}, \dot{\mathrm{q}}, t)}$ is the Legendre transform of the lagrangian function, which is viewed as a function of $\dot{\mathrm{q}}$. 
+
+Proof of the theorem: 
+
 
 \subsubsection{Hamilton's function and energy} 
 Lagrangian has the usual form $L=T-U$, where $T$ is a quadratic form with respect to $\mathbf{\dot{q}}$
