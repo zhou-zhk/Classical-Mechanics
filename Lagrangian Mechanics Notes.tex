@@ -94,8 +94,8 @@ where $H(\mathrm{p}, \mathrm{q}, t) = \mathrm{p}\mathrm{q} - L (\mathrm{q}, \dot
 Proof of the theorem: The Legendre transform of $L$ with respect to $\dot{q}$ is $H(p) = p \dot{q} - L(\dot{q})$, since $\frac{\partial H}{\partial \dot{q}} = 0$ in the Legendre transform, we get $p=\frac{\partial L}{\partial \dot{q}}$, so it depends on $q$ and $t$. The total differential of $hamiltonian \; H$ is \begin{equation}
     \mathrm{d}H = \frac{\partial H}{\partial \mathbf{p}} \mathrm{d}\mathbf{p} + \frac{\partial H}{\partial \mathbf{q}} \mathrm{d}\mathbf{q} +\frac{\partial H}{\partial t} \mathrm{d}t \xlongequal[p=\partial L / {\partial\dot{q}}]{H=p\dot{q}-L} \mathbf{\dot{q}} \mathrm{d}\mathbf{p} - \frac{\partial L}{\partial \mathbf{q}} \mathrm{d}\mathbf{q} -\frac{\partial L}{\partial t} \mathrm{d}t. 
 \end{equation} So we get \begin{equation}
-    \mathbf{\dot{q}} = \frac{\partial H}{\partial \mathbf{p}}, \;\; \frac{\partial H}{\partial \mathbf{q}} = - \frac{\partial L}{\partial \mathbf{q}}=\mathbf{\dot{p}} \;\; \frac{\partial H}{\partial t}=-\frac{\partial L}{\partial t}. 
-\end{equation}
+    \mathbf{\dot{q}} = \frac{\partial H}{\partial \mathbf{p}}, \;\; \frac{\partial H}{\partial \mathbf{q}} = - \frac{\partial L}{\partial \mathbf{q}}, \;\; \frac{\partial H}{\partial t}=-\frac{\partial L}{\partial t}. 
+\end{equation} Since for Lagrangian $L$: $\frac{\mathrm{d}}{\mathrm{d}t} \left( \frac{\partial L}{\partial \dot{q}} \right) - \frac{\partial L}{\partial q} =0$, we have $\frac{\partial H}{\partial \mathbf{q}} = - \frac{\partial L}{\partial \mathbf{q}}=-\frac{\mathrm{d}}{\mathrm{d}t} \frac{\partial L}{\partial \dot{\mathbf{q}}} = -\frac{\mathrm{d}}{\mathrm{d}t}\mathbf{p} = -\mathbf{\dot{p}}$ so Hamilton's equations are obtained. \\ If $q(t)$ satisfies Lagrange's equations, $(p(t), q(t))$ also satisfies Hamilton's equations, and vice versa. Therefore \textbf{the systems of Lagrange and Hamilton are equivalent}.
 
 
 \subsubsection{Hamilton's function and energy} 
