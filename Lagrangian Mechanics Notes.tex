@@ -24,6 +24,7 @@
 \usepackage[most]{tcolorbox}
 \usepackage{xcolor}
 \usepackage{graphicx} % Required for inserting images
+\usepackage{extarrows} % long equal symbol on which words can be set upon it
 \colorlet{shadecolor}{orange!15}
 \parindent 0in
 \parskip 12pt
@@ -90,7 +91,11 @@ Assuming Lagrangian $L$ is convex with respect to $\dot{q}$, and the system of L
 \end{align}
 where $H(\mathrm{p}, \mathrm{q}, t) = \mathrm{p}\mathrm{q} - L (\mathrm{q}, \dot{\mathrm{q}}, t)$ is the Legendre transform of the lagrangian function, which is viewed as a function of $\dot{\mathrm{q}}$. 
 
-Proof of the theorem: The Legendre transform of $L$ with respect to $\dot{q}$ is $H(p) = p \dot{q} - L(\dot{q})$, since $\frac{\partial H}{\partial \dot{q}} = 0$ in Legendre transform, we get $p=\frac{\partial L}{\partial \dot{q}}$, so it depends on $q$ and $t$.  
+Proof of the theorem: The Legendre transform of $L$ with respect to $\dot{q}$ is $H(p) = p \dot{q} - L(\dot{q})$, since $\frac{\partial H}{\partial \dot{q}} = 0$ in the Legendre transform, we get $p=\frac{\partial L}{\partial \dot{q}}$, so it depends on $q$ and $t$. The total differential of $hamiltonian \; H$ is \begin{equation}
+    \mathrm{d}H = \frac{\partial H}{\partial \mathbf{p}} \mathrm{d}\mathbf{p} + \frac{\partial H}{\partial \mathbf{q}} \mathrm{d}\mathbf{q} +\frac{\partial H}{\partial t} \mathrm{d}t \xlongequal[p=\partial L / {\partial\dot{q}}]{H=p\dot{q}-L} \mathbf{\dot{q}} \mathrm{d}\mathbf{p} - \frac{\partial L}{\partial \mathbf{q}} \mathrm{d}\mathbf{q} -\frac{\partial L}{\partial t} \mathrm{d}t. 
+\end{equation} So we get \begin{equation}
+    \mathbf{\dot{q}} = \frac{\partial H}{\partial \mathbf{p}}, \;\; \frac{\partial H}{\partial \mathbf{q}} = - \frac{\partial L}{\partial \mathbf{q}}=\mathbf{\dot{p}} \;\; \frac{\partial H}{\partial t}=-\frac{\partial L}{\partial t}. 
+\end{equation}
 
 
 \subsubsection{Hamilton's function and energy} 
